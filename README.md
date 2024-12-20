@@ -1,4 +1,4 @@
-# One2N_S3
+### One2N_S3
 
 S3 Bucket Content Listing Application
 
@@ -45,7 +45,7 @@ Tools: python-dotenv library for loading environment variables.
 
 The bucket contains files and folders organized hierarchically.
 
- ### AWS Configuration:
+ # AWS Configuration:
 
 Valid AWS credentials are available in the .env file.
 
