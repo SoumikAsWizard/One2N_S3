@@ -41,17 +41,17 @@ Tools: python-dotenv library for loading environment variables.
 
 **Assumptions**
 
-# Bucket Structure:
+### Bucket Structure:
 
 The bucket contains files and folders organized hierarchically.
 
-# AWS Configuration:
+### AWS Configuration:
 
 Valid AWS credentials are available in the .env file.
 
 The IAM user or role has sufficient permissions (e.g., s3:ListBucket, s3:GetObject).
 
-# Deployment:
+### Deployment:
 
 The application is deployed on an EC2 instance with proper security groups configured.
 
