@@ -1,4 +1,4 @@
-### One2N_S3
+# One2N_S3
 
 S3 Bucket Content Listing Application
 
@@ -39,29 +39,29 @@ Reason: Credentials and configuration are stored securely in a .env file to avoi
 
 Tools: python-dotenv library for loading environment variables.
 
-**Assumptions**
+## Assumptions
 
-# Bucket Structure:
+### Bucket Structure:
 
 The bucket contains files and folders organized hierarchically.
 
-# AWS Configuration:
+### AWS Configuration:
 
 Valid AWS credentials are available in the .env file.
 
 The IAM user or role has sufficient permissions (e.g., s3:ListBucket, s3:GetObject).
 
-# Deployment:
+### Deployment:
 
 The application is deployed on an EC2 instance with proper security groups configured.
 
 Port 5000 (Flask) and 443 (HTTPS) are open for incoming traffic.
 
-# Self-Signed Certificate:
+### Self-Signed Certificate:
 
 Browsers will show a warning for the self-signed certificate, which can be bypassed for testing purposes.
 
-**Installation and Setup**
+## Installation and Setup
 
 1. Clone the Repository
 
@@ -89,7 +89,7 @@ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -node
 
 python app.py
 
-**API Usage**
+### API Usage
 
 Endpoint:
 
@@ -125,15 +125,15 @@ Add support for large buckets with pagination.
 
 Deploy behind a Load Balancer for high availability.
 
-**Troubleshooting**
+## Troubleshooting
 
-# Cannot Access HTTPS:
+### Cannot Access HTTPS:
 
 Ensure the security group allows inbound traffic on port 443.
 
 Verify the Flask app is bound to 0.0.0.0.
 
-# Bucket Access Denied:
+### Bucket Access Denied:
 
 Check the IAM role or user permissions for the bucket.
 
@@ -141,6 +141,6 @@ Check for the correct bucket name.
 
 Verify the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in the .env file.
 
-# Self-Signed Certificate Warnings:
+### Self-Signed Certificate Warnings:
 
 This is expected. Proceed with "Advanced → Proceed to site" in your browser.
