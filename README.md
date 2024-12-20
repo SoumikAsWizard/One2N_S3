@@ -125,7 +125,7 @@ Add support for large buckets with pagination.
 
 Deploy behind a Load Balancer for high availability.
 
-**Troubleshooting**
+## Troubleshooting
 
 ### Cannot Access HTTPS:
 
