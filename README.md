@@ -87,7 +87,32 @@ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -node
 
 5. Run the Application
 
-python app.py
+python3 app.py
+
+## Provision Infrastructure with Terraform
+
+Navigate to the Terraform Directory:
+
+cd terraform
+
+Initialize Terraform:
+
+terraform init
+
+Apply Terraform Configuration:
+
+terraform apply -var-file="terraform.tfvars"
+
+Ensure to have a terraform.tfvars file with the necessary AWS credentials and configuration.
+
+aws_access_key = "your-access-key"
+aws_secret_key = "your-secret-access-key"
+key_pair_name  = "your-keypair"
+aws_region       = "your-region"
+
+Access the Application:
+
+Use the public IP provided by Terraform to access the application via HTTPS.
 
 ### API Usage
 
