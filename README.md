@@ -39,7 +39,7 @@ Reason: Credentials and configuration are stored securely in a .env file to avoi
 
 Tools: python-dotenv library for loading environment variables.
 
-**Assumptions**
+## Assumptions
 
 ### Bucket Structure:
 
@@ -61,7 +61,7 @@ Port 5000 (Flask) and 443 (HTTPS) are open for incoming traffic.
 
 Browsers will show a warning for the self-signed certificate, which can be bypassed for testing purposes.
 
-**Installation and Setup**
+## Installation and Setup
 
 1. Clone the Repository
 
