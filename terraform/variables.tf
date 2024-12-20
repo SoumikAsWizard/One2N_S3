@@ -9,7 +9,7 @@ variable "aws_secret_key" {
 }
 
 variable "aws_region" {
-  description = "The AWS region of the ec2."
+  description = "The AWS region of the ec2"
   default     = "us-east-1" # Optional default value
 }
 

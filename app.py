@@ -36,7 +36,7 @@ def list_top_level_folders(bucket_name):
         else:
             return []
     except ClientError as e:
-        raise Exception(f"Error occurred: {e}")
+        return jsonify({"error": "No such bucket exists"}), 404
 
 @app.route("/list-bucket-content", defaults={"path": ""}, methods=["GET"])
 @app.route("/list-bucket-content/<path:path>", methods=["GET"])
